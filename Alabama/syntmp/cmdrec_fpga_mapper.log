@@ -1,0 +1,11 @@
+/usr/local/diamond/2.2/synpbase/bin/m_gen_lattice  -prodtype synplify_pro -encrypt  -pro  -rundir  /home/jacko/pifle/Alabama  -part LCMXO2_7000HC  -package TG144C  -grade -4   -maxfan 1000    -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1  -use_rename_in_edif 1     -summaryfile /home/jacko/pifle/Alabama/synlog/report/Alabama_Alabama_fpga_mapper.xml -top_level_module  pifle  -flow mapping  -oedif  /home/jacko/pifle/Alabama/Alabama_Alabama.edi  -freq 1.000  /home/jacko/pifle/Alabama/synwork/Alabama_Alabama_premap.srd  -devicelib  /usr/local/diamond/2.2/synpbase/lib/lucent/machxo2.v  -devicelib  /usr/local/diamond/2.2/synpbase/lib/lucent/pmi_def.v  -ologparam  /home/jacko/pifle/Alabama/syntmp/Alabama_Alabama.plg  -osyn  /home/jacko/pifle/Alabama/Alabama_Alabama.srm  -prjdir  /home/jacko/pifle/Alabama/  -prjname  proj_1  -log  /home/jacko/pifle/Alabama/synlog/Alabama_Alabama_fpga_mapper.srr 
+rc:1 success:1
+/home/jacko/pifle/Alabama/Alabama_Alabama.edi|o|1386113466|32831
+/home/jacko/pifle/Alabama/synwork/Alabama_Alabama_premap.srd|i|1386113460|14506
+/usr/local/diamond/2.2/synpbase/lib/lucent/machxo2.v|i|1363019730|49719
+/usr/local/diamond/2.2/synpbase/lib/lucent/pmi_def.v|i|1363019731|39416
+/home/jacko/pifle/Alabama/syntmp/Alabama_Alabama.plg|o|1386113468|571
+/home/jacko/pifle/Alabama/Alabama_Alabama.srm|o|1386113464|12826
+/home/jacko/pifle/Alabama/synlog/Alabama_Alabama_fpga_mapper.srr|o|1386113468|7044
+/usr/local/diamond/2.2/synpbase/bin/m_gen_lattice|i|1363019663|345
+/usr/local/diamond/2.2/synpbase/linux/m_gen_lattice|i|1363280017|23447096

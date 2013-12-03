@@ -44,8 +44,13 @@ set_option -resolve_multiple_driver 0
 
 #-- add_file options
 add_file -vhdl {/usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd}
-add_file -vhdl -lib "work" {/home/jacko/pifle/efb.vhd}
+add_file -vhdl -lib "work" {/home/jacko/pifle/pifle.vhd}
+add_file -vhdl -lib "work" {/home/jacko/pifle/defs.vhd}
+add_file -vhdl -lib "work" {/home/jacko/pifle/efbx.vhd}
+add_file -vhdl -lib "work" {/home/jacko/pifle/pllx.vhd}
 
+#-- top module name
+set_option -top_module pifle
 
 #-- set result format/file last
 project -result_file {/home/jacko/pifle/Alabama/Alabama_Alabama.edi}

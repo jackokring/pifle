@@ -3,7 +3,7 @@ Running in Lattice mode
 
 Starting:    /usr/local/diamond/2.2/synpbase/linux/mbin/synbatch
 Install:     /usr/local/diamond/2.2/synpbase
-Date:        Tue Dec  3 19:50:20 2013
+Date:        Tue Dec  3 23:42:52 2013
 Version:     G-2012.09L-SP1 
 
 Arguments:   -product synplify_pro  -batch Alabama_Alabama_synplify.tcl
@@ -42,7 +42,7 @@ compiler exited with errors
 Job: "compiler" terminated with error status: 2.
 See log file: "/home/jacko/pifle/Alabama/Alabama_Alabama.srr"
 Return Code: 2
-Run Time:00h:00m:01s
+Run Time:00h:00m:00s
 
 
 Job Compile Process completed on proj_1|Alabama

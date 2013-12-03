@@ -2,14 +2,17 @@
 <BaliProject version="2.0" title="Alabama" device="LCMXO2-7000HC-4TG144C" synthesis="synplify" default_implementation="Alabama">
     <Options/>
     <Implementation title="Alabama" dir="Alabama" description="Alabama" default_strategy="Strategy1">
-        <Options/>
-        <Source name="efb.ipx" type="IPX_Module" type_short="IPX">
-            <Options/>
-        </Source>
+        <Options def_top="pifle" top="pifle"/>
         <Source name="pifle.vhd" type="VHDL" type_short="VHDL">
-            <Options/>
+            <Options top_module="pifle"/>
         </Source>
         <Source name="defs.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="efbx.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="pllx.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
         <Source name="Alabama/source/pif.lpf" type="Logic Preference" type_short="LPF">

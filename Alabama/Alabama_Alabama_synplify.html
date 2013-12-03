@@ -15,199 +15,43 @@
 #Implementation: Alabama
 
 $ Start of Compile
-#Tue Dec  3 19:50:21 2013
+#Tue Dec  3 23:42:54 2013
 
 Synopsys VHDL Compiler, version comp201209rcp1, Build 271R, built Mar 11 2013
 @N|Running in 32-bit mode
 Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
 
 @N: CD720 :"/usr/local/diamond/2.2/synpbase/lib/vhd/std.vhd":123:18:123:21|Setting time resolution to ns
-@N:"/home/jacko/pifle/efb.vhd":14:7:14:9|Top entity is set to efb.
+@N:"/home/jacko/pifle/pifle.vhd":8:7:8:11|Top entity is set to pifle.
+File /home/jacko/pifle/pifle.vhd changed - recompiling
+File /usr/local/diamond/2.2/synpbase/lib/lucent/machxo2.vhd changed - recompiling
+File /home/jacko/pifle/pllx.vhd changed - recompiling
 VHDL syntax check successful!
-@N: CD630 :"/home/jacko/pifle/efb.vhd":14:7:14:9|Synthesizing work.efb.structure 
-@W: CD276 :"/home/jacko/pifle/efb.vhd":16:8:16:15|Map for port wb_clk_i of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":17:8:17:15|Map for port wb_rst_i of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":18:8:18:15|Map for port wb_cyc_i of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":19:8:19:15|Map for port wb_stb_i of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":20:8:20:14|Map for port wb_we_i of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":21:8:21:15|Map for port wb_adr_i of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":22:8:22:15|Map for port wb_dat_i of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":23:8:23:15|Map for port wb_dat_o of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":24:8:24:15|Map for port wb_ack_o of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":25:8:25:15|Map for port i2c1_scl of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":26:8:26:15|Map for port i2c1_sda of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":27:8:27:16|Map for port i2c1_irqo of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":28:8:28:15|Map for port i2c2_scl of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":29:8:29:15|Map for port i2c2_sda of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":30:8:30:16|Map for port i2c2_irqo of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":31:8:31:14|Map for port spi_clk of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":32:8:32:15|Map for port spi_miso of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":33:8:33:15|Map for port spi_mosi of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":34:8:34:15|Map for port spi_scsn of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":35:8:35:14|Map for port spi_irq of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":36:8:36:14|Map for port tc_clki of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":37:8:37:14|Map for port tc_rstn of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":38:8:38:12|Map for port tc_ic of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":39:8:39:13|Map for port tc_int of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":40:8:40:12|Map for port tc_oc of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":41:8:41:17|Map for port pll0_bus_i of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":42:8:42:17|Map for port pll0_bus_o of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":43:8:43:17|Map for port pll1_bus_i of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":44:8:44:17|Map for port pll1_bus_o of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":45:8:45:13|Map for port ufm_sn of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":46:8:46:18|Map for port wbc_ufm_irq of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":47:8:47:15|Map for port cfg_wake of component efb not found
-@W: CD276 :"/home/jacko/pifle/efb.vhd":48:8:48:16|Map for port cfg_stdby of component efb not found
-@W: CD279 :"/home/jacko/pifle/efb.vhd":127:14:127:19|Port wbclki of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":127:37:127:42|Port wbrsti of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":128:12:128:17|Port wbcyci of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":128:35:128:40|Port wbstbi of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":129:12:129:16|Port wbwei of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":129:34:129:40|Port wbadri7 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":130:12:130:18|Port wbadri6 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":130:36:130:42|Port wbadri5 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":131:12:131:18|Port wbadri4 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":131:36:131:42|Port wbadri3 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":132:12:132:18|Port wbadri2 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":132:36:132:42|Port wbadri1 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":133:12:133:18|Port wbadri0 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":133:36:133:42|Port wbdati7 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":134:12:134:18|Port wbdati6 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":134:36:134:42|Port wbdati5 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":135:12:135:18|Port wbdati4 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":135:36:135:42|Port wbdati3 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":136:12:136:18|Port wbdati2 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":136:36:136:42|Port wbdati1 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":137:12:137:18|Port wbdati0 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":137:36:137:44|Port pll0dati7 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":138:12:138:20|Port pll0dati6 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":138:38:138:46|Port pll0dati5 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":139:12:139:20|Port pll0dati4 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":139:38:139:46|Port pll0dati3 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":140:12:140:20|Port pll0dati2 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":140:38:140:46|Port pll0dati1 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":141:12:141:20|Port pll0dati0 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":141:38:141:45|Port pll0acki of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":142:12:142:20|Port pll1dati7 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":142:38:142:46|Port pll1dati6 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":143:12:143:20|Port pll1dati5 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":143:38:143:46|Port pll1dati4 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":144:12:144:20|Port pll1dati3 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":144:38:144:46|Port pll1dati2 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":145:12:145:20|Port pll1dati1 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":145:38:145:46|Port pll1dati0 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":146:12:146:19|Port pll1acki of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":146:37:146:44|Port i2c1scli of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":147:12:147:19|Port i2c1sdai of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":147:37:147:44|Port i2c2scli of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":148:12:148:19|Port i2c2sdai of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":148:37:148:43|Port spiscki of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":149:12:149:19|Port spimisoi of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":149:37:149:44|Port spimosii of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":150:12:150:18|Port spiscsn of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":150:36:150:41|Port tcclki of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":151:12:151:17|Port tcrstn of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":151:35:151:38|Port tcic of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":152:12:152:16|Port ufmsn of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":152:34:152:40|Port wbdato7 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":153:12:153:18|Port wbdato6 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":153:37:153:43|Port wbdato5 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":154:12:154:18|Port wbdato4 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":154:37:154:43|Port wbdato3 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":155:12:155:18|Port wbdato2 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":155:37:155:43|Port wbdato1 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":156:12:156:18|Port wbdato0 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":156:37:156:42|Port wbacko of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":157:12:157:18|Port pllclko of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":157:37:157:43|Port pllrsto of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":158:12:158:19|Port pll0stbo of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":158:38:158:45|Port pll1stbo of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":159:12:159:17|Port pllweo of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":159:36:159:43|Port plladro4 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":160:12:160:19|Port plladro3 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":160:38:160:45|Port plladro2 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":161:12:161:19|Port plladro1 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":161:38:161:45|Port plladro0 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":162:12:162:19|Port plldato7 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":162:38:162:45|Port plldato6 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":163:12:163:19|Port plldato5 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":163:38:163:45|Port plldato4 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":164:12:164:19|Port plldato3 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":164:38:164:45|Port plldato2 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":165:12:165:19|Port plldato1 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":165:38:165:45|Port plldato0 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":166:12:166:19|Port i2c1sclo of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":166:38:166:47|Port i2c1scloen of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":167:12:167:19|Port i2c1sdao of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":167:38:167:47|Port i2c1sdaoen of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":168:12:168:19|Port i2c2sclo of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":168:38:168:47|Port i2c2scloen of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":169:12:169:19|Port i2c2sdao of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":169:38:169:47|Port i2c2sdaoen of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":170:12:170:19|Port i2c1irqo of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":170:38:170:45|Port i2c2irqo of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":171:12:171:18|Port spiscko of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":171:37:171:44|Port spiscken of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":172:12:172:19|Port spimisoo of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":172:38:172:46|Port spimisoen of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":173:12:173:19|Port spimosio of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":173:38:173:46|Port spimosien of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":174:12:174:19|Port spimcsn7 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":174:38:174:45|Port spimcsn6 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":175:12:175:19|Port spimcsn5 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":175:38:175:45|Port spimcsn4 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":176:12:176:19|Port spimcsn3 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":176:38:176:45|Port spimcsn2 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":177:12:177:19|Port spimcsn1 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":177:38:177:45|Port spimcsn0 of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":178:12:178:19|Port spicsnen of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":178:38:178:44|Port spiirqo of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":179:12:179:16|Port tcint of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":179:35:179:38|Port tcoc of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":180:12:180:20|Port wbcufmirq of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":180:39:180:45|Port cfgwake of component efb not found on corresponding entity
-@W: CD279 :"/home/jacko/pifle/efb.vhd":181:12:181:19|Port cfgstdby of component efb not found on corresponding entity
-@W: CD729 :"/home/jacko/pifle/efb.vhd":216:4:216:12|Component declaration has 50 generics but entity declares only 0 generics
-@W: CD730 :"/home/jacko/pifle/efb.vhd":216:4:216:12|Component declaration has 109 ports but entity declares 33 ports
-@W: CD326 :"/home/jacko/pifle/efb.vhd":216:4:216:12|Port cfg_stdby of entity work.efb is unconnected
-@W: CD326 :"/home/jacko/pifle/efb.vhd":216:4:216:12|Port cfg_wake of entity work.efb is unconnected
-@W: CD326 :"/home/jacko/pifle/efb.vhd":216:4:216:12|Port wbc_ufm_irq of entity work.efb is unconnected
-@E: CD326 :"/home/jacko/pifle/efb.vhd":216:4:216:12|Port ufm_sn of entity work.efb is unconnected
-@W: CD638 :"/home/jacko/pifle/efb.vhd":54:11:54:21|Signal pll_bus_o16 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":55:11:55:21|Signal pll_bus_o15 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":56:11:56:21|Signal pll_bus_o13 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":57:11:57:21|Signal pll_bus_o12 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":58:11:58:21|Signal pll_bus_o11 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":59:11:59:21|Signal pll_bus_o10 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":60:11:60:20|Signal pll_bus_o9 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":61:11:61:20|Signal pll_bus_o8 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":62:11:62:20|Signal pll_bus_o7 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":63:11:63:20|Signal pll_bus_o6 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":64:11:64:20|Signal pll_bus_o5 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":65:11:65:20|Signal pll_bus_o4 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":66:11:66:20|Signal pll_bus_o3 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":67:11:67:20|Signal pll_bus_o2 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":68:11:68:20|Signal pll_bus_o1 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":69:11:69:20|Signal pll_bus_o0 is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":70:11:70:21|Signal spi_mosi_oe is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":71:11:71:20|Signal spi_mosi_o is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":72:11:72:21|Signal spi_miso_oe is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":73:11:73:20|Signal spi_miso_o is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":74:11:74:20|Signal spi_clk_oe is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":75:11:75:19|Signal spi_clk_o is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":79:11:79:21|Signal i2c2_sdaoen is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":80:11:80:19|Signal i2c2_sdao is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":81:11:81:21|Signal i2c2_scloen is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":82:11:82:19|Signal i2c2_sclo is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":85:11:85:21|Signal i2c1_sdaoen is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":86:11:86:19|Signal i2c1_sdao is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":87:11:87:21|Signal i2c1_scloen is undriven 
-@W: CD638 :"/home/jacko/pifle/efb.vhd":88:11:88:19|Signal i2c1_sclo is undriven 
+File /home/jacko/pifle/pifle.vhd changed - recompiling
+File /usr/local/diamond/2.2/synpbase/lib/lucent/machxo2.vhd changed - recompiling
+File /home/jacko/pifle/pllx.vhd changed - recompiling
+@N: CD630 :"/home/jacko/pifle/pifle.vhd":7:7:7:11|Synthesizing work.pifle.rtl 
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":137:2:137:6|Port pllack of entity work.pllx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":137:2:137:6|Port plldato of entity work.pllx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":137:2:137:6|Port lock of entity work.pllx is unconnected
+@E: CD326 :"/home/jacko/pifle/pifle.vhd":137:2:137:6|Port plladdr of entity work.pllx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port cfg_stdby of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port cfg_wake of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port wbc_ufm_irq of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port pll1_bus_o of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port pll0_bus_o of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port tc_oc of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port tc_int of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port spi_irq of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port i2c2_irqo of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port i2c1_irqo of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port wb_ack_o of entity work.efbx is unconnected
+@W: CD326 :"/home/jacko/pifle/pifle.vhd":151:2:151:8|Port wb_dat_o of entity work.efbx is unconnected
 Synthesis failed
 1 errors during synthesis
 @END
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Dec  3 19:50:22 2013
+# Tue Dec  3 23:42:54 2013
 
 ###########################################################]
 

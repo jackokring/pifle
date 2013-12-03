@@ -1,19 +1,54 @@
 <HTML>         	<HEAD><TITLE></TITLE>                                   	<STYLE TYPE="text/css">                               	<!--                                                    	body,pre{                                              	font-family:'Courier New', monospace;             	color: #000000;                                     	font-size:88%;                                      	background-color: #ffffff;                          	}                                                       	h1 {                                                    	font-weight: bold;                                  	margin-top: 24px;                                   	margin-bottom: 10px;                                	border-bottom: 3px solid #000;    font-size: 1em;   	}                                                       	h2 {                                                    	font-weight: bold;                                  	margin-top: 18px;                                   	margin-bottom: 5px;                                 	font-size: 0.90em;                                  	}                                                       	h3 {                                                    	font-weight: bold;                                  	margin-top: 12px;                                   	margin-bottom: 5px;                                 	font-size: 0.80em;                                       	}                                                       	p {                                                     	font-size:78%;                                      	}                                                       	P.Table {                                               	margin-top: 4px;                                    	margin-bottom: 4px;                                 	margin-right: 4px;                                  	margin-left: 4px;                                   	}                                                       	table                                                   	{                                                       	border-width: 1px 1px 1px 1px;                      	border-style: solid solid solid solid;              	border-color: black black black black;              	border-collapse: collapse;                          	}                                                       	th {                                                    	font-weight:bold;                                   	padding: 4px;                                       	border-width: 1px 1px 1px 1px;                      	border-style: solid solid solid solid;              	border-color: black black black black;              	vertical-align:top;                                 	text-align:left;                                    	font-size:78%;                                           	}                                                       	td {                                                    	padding: 4px;                                       	border-width: 1px 1px 1px 1px;                      	border-style: solid solid solid solid;              	border-color: black black black black;              	vertical-align:top;                                 	font-size:78%;                                      	}                                                       	a {                                                     	color:#013C9A;                                      	text-decoration:none;                               	}                                                       		a:visited {                                             	color:#013C9A;                                      	}                                                       		a:hover, a:active {                                     	text-decoration:underline;                          	color:#5BAFD4;                                      	}                                                       	.pass                                                   	{                                                       	background-color: #00ff00;                              	}                                                                	.fail                                                   	{                                                       	background-color: #ff0000;                              	}                                                       	.comment                                                	{                                                       	font-size: 90%;                                     	font-style: italic;                                 	}                                                       		-->                                                     	</STYLE>                                                	</HEAD>                                                 	<BODY>                                                  	<PRE>Setting log file to '/home/jacko/pifle/Alabama/hdla_gen_hierarchy.html'.
+INFO: (VHDL-1504) The default vhdl library search path is now "/usr/local/diamond/2.2/cae_library/vhdl_packages/vdbs"
 -- (VHDL-1481) Analyzing VHDL file /usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd
 -- (VHDL-1493) Restoring VHDL parse-tree ieee.std_logic_1164 from /usr/local/diamond/2.2/cae_library/vhdl_packages/vdbs/ieee/std_logic_1164.vdb
 -- (VHDL-1493) Restoring VHDL parse-tree std.standard from /usr/local/diamond/2.2/cae_library/vhdl_packages/vdbs/std/standard.vdb
--- (VHDL-1481) Analyzing VHDL file /home/jacko/pifle/efb.vhd
-/home/jacko/pifle/efb.vhd(14,8-14,11) INFO: (VHDL-1012) analyzing entity efb
-/home/jacko/pifle/efb.vhd(51,14-51,23) INFO: (VHDL-1010) analyzing architecture structure
 -- (VHDL-1481) Analyzing VHDL file /home/jacko/pifle/defs.vhd
 -- (VHDL-1493) Restoring VHDL parse-tree ieee.numeric_std from /usr/local/diamond/2.2/cae_library/vhdl_packages/vdbs/ieee/numeric_std.vdb
 /home/jacko/pifle/defs.vhd(13,9-13,13) INFO: (VHDL-1014) analyzing package defs
 /home/jacko/pifle/defs.vhd(44,14-44,18) INFO: (VHDL-1013) analyzing package body defs
 -- (VHDL-1481) Analyzing VHDL file /home/jacko/pifle/pifle.vhd
 /home/jacko/pifle/pifle.vhd(7,8-7,13) INFO: (VHDL-1012) analyzing entity pifle
-/home/jacko/pifle/pifle.vhd(17,9-17,10) ERROR: (VHDL-1261) syntax error near ;
-/home/jacko/pifle/pifle.vhd(7,1-61,11) ERROR: (VHDL-1284) unit pifle ignored due to previous errors
--- (VHDL-1482) VHDL file /home/jacko/pifle/pifle.vhd ignored due to errors
-Design load finished with (2) errors, and (0) warnings.
+/home/jacko/pifle/pifle.vhd(72,14-72,17) INFO: (VHDL-1010) analyzing architecture rtl
+/home/jacko/pifle/pifle.vhd(137,3-149,4) INFO: (VHDL-9000) input pin pllclk has no actual or default value
+/home/jacko/pifle/pifle.vhd(114,9-114,15) INFO: (VHDL-1259) pllclk is declared here
+/home/jacko/pifle/pifle.vhd(137,3-149,4) INFO: (VHDL-9000) input pin pllrst has no actual or default value
+/home/jacko/pifle/pifle.vhd(115,9-115,15) INFO: (VHDL-1259) pllrst is declared here
+/home/jacko/pifle/pifle.vhd(137,3-149,4) INFO: (VHDL-9000) input pin pllstb has no actual or default value
+/home/jacko/pifle/pifle.vhd(116,9-116,15) INFO: (VHDL-1259) pllstb is declared here
+/home/jacko/pifle/pifle.vhd(137,3-149,4) INFO: (VHDL-9000) input pin pllwe has no actual or default value
+/home/jacko/pifle/pifle.vhd(117,9-117,14) INFO: (VHDL-1259) pllwe is declared here
+/home/jacko/pifle/pifle.vhd(137,3-149,4) INFO: (VHDL-9000) input pin plldati has no actual or default value
+/home/jacko/pifle/pifle.vhd(118,9-118,16) INFO: (VHDL-1259) plldati is declared here
+/home/jacko/pifle/pifle.vhd(137,3-149,4) INFO: (VHDL-9000) input pin plladdr has no actual or default value
+/home/jacko/pifle/pifle.vhd(119,9-119,16) INFO: (VHDL-1259) plladdr is declared here
+-- (VHDL-1481) Analyzing VHDL file /home/jacko/pifle/efbx.vhd
+/home/jacko/pifle/efbx.vhd(14,8-14,12) INFO: (VHDL-1012) analyzing entity efbx
+/home/jacko/pifle/efbx.vhd(51,14-51,23) INFO: (VHDL-1010) analyzing architecture structure
+-- (VHDL-1481) Analyzing VHDL file /home/jacko/pifle/pllx.vhd
+/home/jacko/pifle/pllx.vhd(14,8-14,12) INFO: (VHDL-1012) analyzing entity pllx
+/home/jacko/pifle/pllx.vhd(31,14-31,23) INFO: (VHDL-1010) analyzing architecture structure
+/home/jacko/pifle/pifle.vhd(7,8-7,13) INFO: (VHDL-1067) elaborating pifle(rtl)
+/home/jacko/pifle/pifle.vhd(134,3-134,48) WARNING: (VHDL-1250) ib remains a black-box since it has no binding entity
+/home/jacko/pifle/pifle.vhd(135,3-135,41) WARNING: (VHDL-1250) gsr remains a black-box since it has no binding entity
+/home/jacko/pifle/pllx.vhd(14,8-14,12) INFO: (VHDL-1067) elaborating pllx_uniq_0(Structure)
+/home/jacko/pifle/pllx.vhd(113,5-114,33) WARNING: (VHDL-1250) vlo remains a black-box since it has no binding entity
+/home/jacko/pifle/pllx.vhd(116,5-153,57) WARNING: (VHDL-1250) ehxpllj remains a black-box since it has no binding entity
+/home/jacko/pifle/pllx.vhd(17,9-17,15) INFO: (VHDL-9001) input port pllclk has no actual or default value
+/home/jacko/pifle/pllx.vhd(18,9-18,15) INFO: (VHDL-9001) input port pllrst has no actual or default value
+/home/jacko/pifle/pllx.vhd(19,9-19,15) INFO: (VHDL-9001) input port pllstb has no actual or default value
+/home/jacko/pifle/pllx.vhd(20,9-20,14) INFO: (VHDL-9001) input port pllwe has no actual or default value
+/home/jacko/pifle/pllx.vhd(21,9-21,16) INFO: (VHDL-9001) input port plldati has no actual or default value
+/home/jacko/pifle/pllx.vhd(22,9-22,16) INFO: (VHDL-9001) input port plladdr has no actual or default value
+/home/jacko/pifle/efbx.vhd(14,8-14,12) INFO: (VHDL-1067) elaborating efbx_uniq_0(Structure)
+/home/jacko/pifle/efbx.vhd(189,5-191,26) WARNING: (VHDL-1250) bb remains a black-box since it has no binding entity
+/home/jacko/pifle/efbx.vhd(193,5-195,26) WARNING: (VHDL-1250) bb remains a black-box since it has no binding entity
+/home/jacko/pifle/efbx.vhd(197,5-198,74) WARNING: (VHDL-1250) bb remains a black-box since it has no binding entity
+/home/jacko/pifle/efbx.vhd(200,5-202,26) WARNING: (VHDL-1250) bb remains a black-box since it has no binding entity
+/home/jacko/pifle/efbx.vhd(204,5-206,26) WARNING: (VHDL-1250) bb remains a black-box since it has no binding entity
+/home/jacko/pifle/efbx.vhd(208,5-210,26) WARNING: (VHDL-1250) bb remains a black-box since it has no binding entity
+/home/jacko/pifle/efbx.vhd(212,5-214,26) WARNING: (VHDL-1250) bb remains a black-box since it has no binding entity
+/home/jacko/pifle/efbx.vhd(216,5-286,34) WARNING: (VHDL-1250) efb remains a black-box since it has no binding entity
+Design load finished with (0) errors, and (12) warnings.
 
 </PRE></BODY></HTML>

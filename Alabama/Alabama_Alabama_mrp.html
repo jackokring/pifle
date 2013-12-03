@@ -1,0 +1,378 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>            Lattice Mapping Report File for Design Module 'pifle'
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HC -t TQFP144 -s 4 -oc Commercial
+     Alabama_Alabama.ngd -o Alabama_Alabama_map.ncd -pr Alabama_Alabama.prf -mp
+     Alabama_Alabama.mrp /home/jacko/pifle/Alabama/source/pif.lpf -c 0
+     -noinferGSR
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HCTQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond Version 2.2.0.101
+Mapped on:  12/03/13  23:31:11
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+
+
+
+
+   Number of warnings:  33
+   Number of errors:    2
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: FEATURE/EFBInst_0: I2C_PORT was set to ENABLE by ngdbuild
+     generated property. Setting in preference file was ignored.
+WARNING - map: The JTAG port has been disabled in this project and JTAG pins
+     will be configured as General Purpose IO.  You have to use JTAGENB pin in
+     hardware to change the personality of the port from JTAG pins to general
+     purpose IO.  Reference MACHXO2 Handbook for details on dual function JTAG
+     port.
+WARNING - map: GSR inference option has been disabled but the design contains a
+     GSR component.
+ERROR - map: FEATURE/EFBInst_0: On-Chip Oscillator is not instantiated in the
+     design. Therefore, it cannot be used as clock source for TimerCounter.
+WARNING - map: IO buffer missing for top level port PiCLK...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port R0...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port R1...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port R2...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port R3...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port R4...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port R5...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port R6...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port R7...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port R8...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port R9...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port CE1...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO25...logic will be
+
+     discarded.
+WARNING - map: IO buffer missing for top level port XIO25...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO24...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port XIO24...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO23...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port XIO23...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO22...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO27...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port XIO22...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port XIO27...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO18...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port XIO18...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO17...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port XIO17...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO15...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port XIO15...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO14...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port XIO14...logic will be
+     discarded.
+ERROR - map: Errors found in users design.  Output files not written.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
+   IO attributes information not available.
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Signal FEATURE/GND undriven or does not drive anything - clipped.
+Signal FEATURE/CFGSTDBY undriven or does not drive anything - clipped.
+Signal FEATURE/CFGWAKE undriven or does not drive anything - clipped.
+Signal FEATURE/WBCUFMIRQ undriven or does not drive anything - clipped.
+Signal FEATURE/TCOC undriven or does not drive anything - clipped.
+Signal FEATURE/TCINT undriven or does not drive anything - clipped.
+Signal FEATURE/SPIIRQO undriven or does not drive anything - clipped.
+Signal FEATURE/SPICSNEN undriven or does not drive anything - clipped.
+Signal FEATURE/SPIMCSN7 undriven or does not drive anything - clipped.
+Signal FEATURE/SPIMCSN6 undriven or does not drive anything - clipped.
+
+Signal FEATURE/SPIMCSN5 undriven or does not drive anything - clipped.
+Signal FEATURE/SPIMCSN4 undriven or does not drive anything - clipped.
+Signal FEATURE/SPIMCSN3 undriven or does not drive anything - clipped.
+Signal FEATURE/SPIMCSN2 undriven or does not drive anything - clipped.
+Signal FEATURE/SPIMCSN1 undriven or does not drive anything - clipped.
+Signal FEATURE/SPIMCSN0 undriven or does not drive anything - clipped.
+Signal FEATURE/I2C2IRQO undriven or does not drive anything - clipped.
+Signal FEATURE/I2C1IRQO undriven or does not drive anything - clipped.
+Signal FEATURE/PLLDATO0 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLDATO1 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLDATO2 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLDATO3 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLDATO4 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLDATO5 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLDATO6 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLDATO7 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLADRO0 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLADRO1 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLADRO2 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLADRO3 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLADRO4 undriven or does not drive anything - clipped.
+Signal FEATURE/PLLWEO undriven or does not drive anything - clipped.
+Signal FEATURE/PLL1STBO undriven or does not drive anything - clipped.
+Signal FEATURE/PLL0STBO undriven or does not drive anything - clipped.
+Signal FEATURE/PLLRSTO undriven or does not drive anything - clipped.
+Signal FEATURE/PLLCLKO undriven or does not drive anything - clipped.
+Signal FEATURE/WBACKO undriven or does not drive anything - clipped.
+Signal FEATURE/WBDATO0 undriven or does not drive anything - clipped.
+Signal FEATURE/WBDATO1 undriven or does not drive anything - clipped.
+Signal FEATURE/WBDATO2 undriven or does not drive anything - clipped.
+Signal FEATURE/WBDATO3 undriven or does not drive anything - clipped.
+Signal FEATURE/WBDATO4 undriven or does not drive anything - clipped.
+Signal FEATURE/WBDATO5 undriven or does not drive anything - clipped.
+Signal FEATURE/WBDATO6 undriven or does not drive anything - clipped.
+Signal FEATURE/WBDATO7 undriven or does not drive anything - clipped.
+Block FEATURE/GND was optimized away.
+
+Embedded Functional Block Connection Summary:
+---------------------------------------------
+
+   Desired WISHBONE clock frequency: 50.0 MHz
+   Clock source:                     NONE
+   Reset source:                     NONE
+   Functions mode:
+      I2C #1 (Primary) Function:     ENABLED
+      I2C #2 (Secondary) Function:   ENABLED
+      SPI Function:                  ENABLED
+      Timer/Counter Function:        ENABLED
+      Timer/Counter Mode:            WB
+      UFM Connection:                ENABLED
+      PLL0 Connection:               DISABLED
+      PLL1 Connection:               DISABLED
+   I2C Function Summary:
+   --------------------
+      I2C Component:          PRIMARY
+      I2C Addressing:         7BIT
+
+      I2C Performance:        400kHz
+      Slave Address:          0b1000001
+      General Call:           DISABLED
+      I2C Wake Up:            ENABLED
+      --------
+      I2C Component:          SECONDARY
+      I2C Addressing:         7BIT
+      I2C Performance:        100kHz
+      Slave Address:          0b1000010
+      General Call:           DISABLED
+      I2C Wake Up:            ENABLED
+      --------
+      I2C Component:          UFM/Configuration
+      I2C Addressing:         7BIT
+      I2C Performance:        400kHz
+      Slave Address:          0b1000000
+   SPI Function Summary:
+   --------------------
+      SPI Mode:               SLAVE
+      SPI Data Order:         MSB to LSB
+      SPI Clock Inversion:    DISABLED
+      SPI Phase Adjust:       DISABLED
+      SPI Wakeup:             ENABLED
+   Timer/Counter Function Summary:
+   ------------------------------
+      TC_MODE:                CTCM
+      TC_SCLK_SEL:            Positive Edge, On-Chip Oscillator
+      TC_CCLK_SEL:            1
+      GSR:                    ENABLED
+      TC_TOP_SET:             65535
+      TC_OCR_SET:             32767
+      TC_OC_MODE:             TOGGLE
+      TC_RESETN:              ENABLED
+      TC_TOP_SEL:             ON
+      TC_OV_INT:              ON
+      TC_OCR_INT:             ON
+      TC_ICR_INT:             ON
+      TC_OVERFLOW:            DISABLED
+      TC_ICAPTURE:            DISABLED
+   UFM Function Summary:
+   --------------------
+      UFM Utilization:        General Purpose Flash Memory
+      Initialized UFM Pages:  2046 Pages (2046*128 Bits)
+      Available General
+      Purpose Flash Memory:   2046 Pages (2046*128 Bits)
+
+      EBR Blocks with Unique
+      Initialization Data:    0
+
+      WID		EBR Instance
+      ---		------------
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: FEATURE/EFBInst_0
+         Type: EFB
+
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'GSRnX'.
+
+GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c)
+        1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+        Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+        All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor
+        Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

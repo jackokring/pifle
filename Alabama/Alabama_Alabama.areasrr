@@ -1,0 +1,31 @@
+----------------------------------------------------------------------
+Report for cell pifle.rtl
+
+Register bits: 0 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       21
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        7       100.0
+                                EFB        1       100.0
+                                GSR        1       100.0
+                                 IB        2       100.0
+                                 OB       12       100.0
+                                PUR        1       100.0
+                                VHI        2       100.0
+                                VLO        2       100.0
+SUB MODULES 
+                               efbx        1       100.0
+                            
+                         TOTAL            29           
+----------------------------------------------------------------------
+Report for cell efbx.netlist
+     Instance path:  FEATURE
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        7       100.0
+                                EFB        1       100.0
+                                VHI        1        50.0
+                                VLO        1        50.0
+                            
+                         TOTAL            10           

@@ -1,0 +1,1 @@
+@W: MT246 :"/home/jacko/pifle/efbx.vhd":216:4:216:12|Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 

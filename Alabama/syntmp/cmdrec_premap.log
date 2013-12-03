@@ -1,0 +1,13 @@
+/usr/local/diamond/2.2/synpbase/bin/m_gen_lattice  -prodtype synplify_pro -encrypt  -pro  -rundir  /home/jacko/pifle/Alabama  -part LCMXO2_7000HC  -package TG144C  -grade -4   -maxfan 1000    -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1  -use_rename_in_edif 1     -summaryfile /home/jacko/pifle/Alabama/synlog/report/Alabama_Alabama_premap.xml -top_level_module  pifle  -oedif  /home/jacko/pifle/Alabama/Alabama_Alabama.edi  -conchk_prepass  /home/jacko/pifle/Alabama/Alabama_Alabama_cck_prepass.rpt  -freq 1.000  /home/jacko/pifle/Alabama/synwork/Alabama_Alabama_compiler.srs  -flow prepass  -gcc_prepass  -osrd  /home/jacko/pifle/Alabama/synwork/Alabama_Alabama_premap.srd  -devicelib  /usr/local/diamond/2.2/synpbase/lib/lucent/machxo2.v  -devicelib  /usr/local/diamond/2.2/synpbase/lib/lucent/pmi_def.v  -ologparam  /home/jacko/pifle/Alabama/syntmp/Alabama_Alabama.plg  -osyn  /home/jacko/pifle/Alabama/synwork/Alabama_Alabama_premap.srd  -prjdir  /home/jacko/pifle/Alabama/  -prjname  proj_1  -log  /home/jacko/pifle/Alabama/synlog/Alabama_Alabama_premap.srr 
+rc:0 success:1
+/home/jacko/pifle/Alabama/Alabama_Alabama.edi|o|1386111792|32831
+/home/jacko/pifle/Alabama/Alabama_Alabama_cck_prepass.rpt|o|0|0
+/home/jacko/pifle/Alabama/synwork/Alabama_Alabama_compiler.srs|i|1386113455|23465
+/home/jacko/pifle/Alabama/synwork/Alabama_Alabama_premap.srd|o|1386113460|14506
+/usr/local/diamond/2.2/synpbase/lib/lucent/machxo2.v|i|1363019730|49719
+/usr/local/diamond/2.2/synpbase/lib/lucent/pmi_def.v|i|1363019731|39416
+/home/jacko/pifle/Alabama/syntmp/Alabama_Alabama.plg|o|1386113456|0
+/home/jacko/pifle/Alabama/synwork/Alabama_Alabama_premap.srd|o|1386113460|14506
+/home/jacko/pifle/Alabama/synlog/Alabama_Alabama_premap.srr|o|1386113460|2012
+/usr/local/diamond/2.2/synpbase/bin/m_gen_lattice|i|1363019663|345
+/usr/local/diamond/2.2/synpbase/linux/m_gen_lattice|i|1363280017|23447096

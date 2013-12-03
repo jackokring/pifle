@@ -11,7 +11,7 @@ library MACHXO2;
 use MACHXO2.components.all;
 -- synopsys translate_on
 
-entity efb is
+entity efbx is
     port (
         wb_clk_i: in  std_logic; 
         wb_rst_i: in  std_logic; 
@@ -46,9 +46,9 @@ entity efb is
         wbc_ufm_irq: out  std_logic; 
         cfg_wake: out  std_logic; 
         cfg_stdby: out  std_logic);
-end efb;
+end efbx;
 
-architecture Structure of efb is
+architecture Structure of efbx is
 
     -- internal signal declarations
     signal pll_bus_o16: std_logic;

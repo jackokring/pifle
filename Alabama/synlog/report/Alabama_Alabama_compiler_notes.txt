@@ -1,5 +1,5 @@
 @N|Running in 32-bit mode
 @N: CD720 :"/usr/local/diamond/2.2/synpbase/lib/vhd/std.vhd":123:18:123:21|Setting time resolution to ns
-@N:"/home/jacko/pifle/efb.vhd":14:7:14:9|Top entity is set to efb.
-@N: CD630 :"/home/jacko/pifle/efb.vhd":14:7:14:9|Synthesizing work.efb.structure 
+@N:"/home/jacko/pifle/pifle.vhd":8:7:8:11|Top entity is set to pifle.
+@N: CD630 :"/home/jacko/pifle/pifle.vhd":7:7:7:11|Synthesizing work.pifle.rtl 
 

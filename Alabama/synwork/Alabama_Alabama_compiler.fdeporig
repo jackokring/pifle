@@ -1,6 +1,6 @@
 %%% protect protected_file
 #defaultlanguage:vhdl
-#OPTIONS:"|-top|work.efb|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work"
+#OPTIONS:"|-top|pifle|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
 #CUR:"/usr/local/diamond/2.2/synpbase/linux/c_vhdl":1363019848
 #CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/location.map":1363026801
 #CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/std.vhd":1363019837
@@ -11,18 +11,35 @@
 #CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/arith.vhd":1363019837
 #CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/unsigned.vhd":1363019837
 #CUR:"/usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd":1347654319
-#CUR:"/home/jacko/pifle/efb.vhd":1386100069
+#CUR:"/home/jacko/pifle/defs.vhd":1386103238
+#CUR:"/home/jacko/pifle/efbx.vhd":1386111095
+#CUR:"/home/jacko/pifle/pllx.vhd":1386113427
+#CUR:"/home/jacko/pifle/pifle.vhd":1386114163
 0 "/usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd" vhdl
-1 "/home/jacko/pifle/efb.vhd" vhdl
+1 "/home/jacko/pifle/defs.vhd" vhdl
+2 "/home/jacko/pifle/efbx.vhd" vhdl
+3 "/home/jacko/pifle/pllx.vhd" vhdl
+4 "/home/jacko/pifle/pifle.vhd" vhdl
 
 # Dependency Lists (Uses list)
 0 -1
-1 0 
+1 -1
+2 0 
+3 0 
+4 3 2 1 0 
 
 # Dependency Lists (Users Of)
-0 1 
-1 -1
+0 4 3 2 
+1 4 
+2 4 
+3 4 
+4 -1
 
 # Design Unit to File Association
-arch work efb structure 1
-module work efb 1
+arch work efbx structure 2
+module work efbx 2
+config work structure_con 3
+arch work pllx structure 3
+module work pllx 3
+arch work pifle rtl 4
+module work pifle 4

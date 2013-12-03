@@ -4,7 +4,10 @@
 
 #project files
 add_file -vhdl -lib work "/usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd"
-add_file -vhdl -lib work "/home/jacko/pifle/efb.vhd"
+add_file -vhdl -lib work "/home/jacko/pifle/defs.vhd"
+add_file -vhdl -lib work "/home/jacko/pifle/efbx.vhd"
+add_file -vhdl -lib work "/home/jacko/pifle/pllx.vhd"
+add_file -vhdl -lib work "/home/jacko/pifle/pifle.vhd"
 
 
 #implementation: "Alabama"
@@ -25,7 +28,7 @@ set_option -speed_grade -4
 set_option -part_companion ""
 
 #compilation/mapping options
-set_option -top_module "work.efb"
+set_option -top_module "pifle"
 
 # mapper_options
 set_option -frequency 1

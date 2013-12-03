@@ -4,15 +4,15 @@
 #Hostname: jacko-901
 
 $ Start of Compile
-#Tue Dec  3 19:50:20 2013
+#Tue Dec  3 23:42:52 2013
 
 Synopsys VHDL Compiler, version comp201209rcp1, Build 271R, built Mar 11 2013
 @N|Running in 32-bit mode
 Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
 
 @N: CD720 :"/usr/local/diamond/2.2/synpbase/lib/vhd/std.vhd":123:18:123:21|Setting time resolution to ns
-@N:"/home/jacko/pifle/efb.vhd":14:7:14:9|Top entity is set to efb.
+@N:"/home/jacko/pifle/pifle.vhd":8:7:8:11|Top entity is set to pifle.
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Dec  3 19:50:20 2013
+# Tue Dec  3 23:42:53 2013
 
 ###########################################################]

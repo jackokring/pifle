@@ -14,16 +14,16 @@ entity pifle is
     PiCLK: in slv;
 
 	-- right bank
-    R0: ;
-    R1: ;
-    R2: ;
-    R3: ;
-    R4: ;
-    R5: ;
-    R6: ;
-    R7: ;
-    R8: ;
-    R9: ;
+    R0: inout slv;
+    R1: inout slv;
+    R2: inout slv;
+    R3: inout slv;
+    R4: inout slv;
+    R5: inout slv;
+    R6: inout slv;
+    R7: inout slv;
+    R8: inout slv;
+    R9: inout slv;
 
 	-- bottom bank
     B0: out slv;
@@ -56,13 +56,22 @@ entity pifle is
     XIO15: inout slv;
     GPIO14: inout slv;
     XIO14: inout slv;
-    XCLK: out slv
+    XCLK: out slv;
+	
+	-- reset 
+	GSRn: in slv;
+	
+	-- spi
+	SCLK: inout slv;
+    MISO: inout slv;
+    CE0_FSn: inout slv;
+    MOSI: inout slv
 );
 end pifle;
 
 architecture rtl of pifle is
   
-  component efb is
+  component efbx is
     port (
         wb_clk_i: in  std_logic; 
         wb_rst_i: in  std_logic; 
@@ -97,7 +106,22 @@ architecture rtl of pifle is
         wbc_ufm_irq: out  std_logic; 
         cfg_wake: out  std_logic; 
         cfg_stdby: out  std_logic);
-  end component efb;
+  end component efbx;
+  
+  component pllx is
+	port (
+        CLKI: in  std_logic; 
+        PLLCLK: in  std_logic; 
+        PLLRST: in  std_logic; 
+        PLLSTB: in  std_logic; 
+        PLLWE: in  std_logic; 
+        PLLDATI: in  std_logic_vector(7 downto 0); 
+        PLLADDR: in  std_logic_vector(4 downto 0); 
+        CLKOP: out  std_logic; 
+        LOCK: out  std_logic; 
+        PLLDATO: out  std_logic_vector(7 downto 0); 
+        PLLACK: out  std_logic);
+	end component pllx;
 
   signal  GSRnX       : std_logic;
 
@@ -109,42 +133,56 @@ begin
   -- global reset
   IBgsr   : IB  port map ( I=>GSRn, O=>GSRnX );
   GSR_GSR : GSR port map ( GSR=>GSRnX );
+  
+  OSCAR: pllx port map (
+        CLKI => PiCLK, 
+        -- PLLCLK => , 
+        -- PLLRST => , 
+        -- PLLSTB => , 
+        -- PLLWE => , 
+        -- PLLDATI => , 
+        -- PLLADDR => , 
+        CLKOP => XCLK --, 
+        -- LOCK => , 
+        -- PLLDATO => , 
+        -- PLLACK => 
+	);
 
-  FEATURE: efb port map ( 
-        wb_clk_i => ,
-        wb_rst_i => , 
-        wb_cyc_i => , 
-        wb_stb_i => , 
-        wb_we_i => , 
-        wb_adr_i => , 
-        wb_dat_i => , 
-        wb_dat_o => , 
-        wb_ack_o => , 
-        i2c1_scl => , 
-        i2c1_sda => , 
-        i2c1_irqo => , 
-        i2c2_scl => , 
-        i2c2_sda => , 
-        i2c2_irqo => , 
-        spi_clk => , 
-        spi_miso => , 
-        spi_mosi => , 
-        spi_scsn => , 
-        spi_irq => , 
-        tc_clki => , 
-        tc_rstn => , 
-        tc_ic => , 
-        tc_int => , 
-        tc_oc => , 
-        pll0_bus_i => , 
-        pll0_bus_o => , 
-        pll1_bus_i => , 
-        pll1_bus_o => , 
-        ufm_sn => , 
-        wbc_ufm_irq => , 
-        cfg_wake => , 
-        cfg_stdby => 
-);
+  FEATURE: efbx port map ( 
+        wb_clk_i => '0',
+        wb_rst_i => '0', 
+        wb_cyc_i => '0', 
+        wb_stb_i => '0', 
+        wb_we_i => '0', 
+        wb_adr_i => "00000000", 
+        wb_dat_i => "00000000", 
+        -- wb_dat_o => , 
+        -- wb_ack_o => , 
+        i2c1_scl => SCL, 
+        i2c1_sda => SDA, 
+        -- i2c1_irqo => , 
+        -- i2c2_scl => , 
+        -- i2c2_sda => , 
+        -- i2c2_irqo => , 
+        spi_clk => SCLK, 
+        spi_miso => MISO, 
+        spi_mosi => MOSI, 
+        spi_scsn => CE0_FSn, 
+        -- spi_irq => , 
+        tc_clki => '0', 
+        tc_rstn => '1', 
+        tc_ic => '0', 
+        -- tc_int => , 
+        -- tc_oc => , 
+        pll0_bus_i => "000000000", 
+        -- pll0_bus_o => , 
+        pll1_bus_i => "000000000", 
+        -- pll1_bus_o => , 
+        ufm_sn => '1' --, 
+        -- wbc_ufm_irq => , 
+        -- cfg_wake => , 
+        -- cfg_stdby => 
+	);
 
 --
 

@@ -1,8 +1,11 @@
-/usr/local/diamond/2.2/synpbase/bin/c_vhdl  -osyn  /home/jacko/pifle/Alabama/synwork/Alabama_Alabama_hdl_info_gen.srs  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -divnmod -encrypt  -pro  -dmgen  /home/jacko/pifle/Alabama/dm  -lite -ll 2000   -ui -fid2 -ram -sharing on  -autosm -ignore_undefined_lib  -lib work /usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd -lib work /home/jacko/pifle/efb.vhd -loga  /home/jacko/pifle/Alabama/syntax.log  -fileorder  /home/jacko/pifle/Alabama/syntmp/hdlorder.tcl 
+/usr/local/diamond/2.2/synpbase/bin/c_vhdl  -osyn  /home/jacko/pifle/Alabama/synwork/Alabama_Alabama_hdl_info_gen.srs  -top  pifle  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -divnmod -encrypt  -pro  -dmgen  /home/jacko/pifle/Alabama/dm  -lite -ll 2000   -ui -fid2 -ram -sharing on  -autosm -ignore_undefined_lib  -lib work /usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd -lib work /home/jacko/pifle/pifle.vhd -lib work /home/jacko/pifle/defs.vhd -lib work /home/jacko/pifle/efbx.vhd -lib work /home/jacko/pifle/pllx.vhd -loga  /home/jacko/pifle/Alabama/syntax.log  -fileorder  /home/jacko/pifle/Alabama/syntmp/hdlorder.tcl 
 rc:0 success:1
 /home/jacko/pifle/Alabama/synwork/Alabama_Alabama_hdl_info_gen.srs|o|0|0
 /usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd|i|1347654319|76237
-/home/jacko/pifle/efb.vhd|i|1386100069|15337
-/home/jacko/pifle/Alabama/syntax.log|o|1386100220|892
+/home/jacko/pifle/pifle.vhd|i|1386114163|4660
+/home/jacko/pifle/defs.vhd|i|1386103238|3822
+/home/jacko/pifle/efbx.vhd|i|1386111095|15369
+/home/jacko/pifle/pllx.vhd|i|1386113427|8208
+/home/jacko/pifle/Alabama/syntax.log|o|1386114173|895
 /usr/local/diamond/2.2/synpbase/bin/c_vhdl|i|1363019663|365
 /usr/local/diamond/2.2/synpbase/linux/c_vhdl|i|1363019848|5311588

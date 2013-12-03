@@ -1,2 +1,1 @@
-set_option -top_module work.efb
-project -fileorder "/usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd" "/home/jacko/pifle/efb.vhd" 
+project -fileorder "/usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd" "/home/jacko/pifle/defs.vhd" "/home/jacko/pifle/efbx.vhd" "/home/jacko/pifle/pllx.vhd" "/home/jacko/pifle/pifle.vhd" 

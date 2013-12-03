@@ -8,8 +8,8 @@
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
             <Task name="BitgenXO2" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="0" build_time="0">
-            <Task name="Map" build_result="0" update_result="3" update_time="0"/>
+        <Milestone name="Map" build_result="1" build_time="1386113473">
+            <Task name="Map" build_result="1" update_result="2" update_time="1386113473"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
@@ -19,18 +19,20 @@
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="0" build_time="1386100222">
-            <Task name="Synplify_Synthesis" build_result="0" update_result="2" update_time="1386100222"/>
+        <Milestone name="Synthesis" build_result="1" build_time="1386114175">
+            <Task name="Synplify_Synthesis" build_result="1" update_result="2" update_time="1386114175"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1386104490"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1386114163"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="0" build_time="0">
-            <Task name="Translate" build_result="0" update_result="3" update_time="0"/>
+        <Milestone name="Translate" build_result="0" build_time="1386113471">
+            <Task name="Translate" build_result="0" update_result="2" update_time="1386113471"/>
         </Milestone>
-        <Report name="Alabama_Alabama.edi" last_build_time="0" last_build_size="0"/>
+        <Report name="Alabama_Alabama.edi" last_build_time="1386113466" last_build_size="32831"/>
+        <Report name="Alabama_Alabama.ngd" last_build_time="1386113471" last_build_size="20386"/>
+        <Report name="Alabama_Alabama_map.ncd" last_build_time="0" last_build_size="0"/>
     </Strategy>
 </BuildStatus>
