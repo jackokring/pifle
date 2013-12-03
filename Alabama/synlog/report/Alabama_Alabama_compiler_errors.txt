@@ -1,0 +1,2 @@
+@E: CD326 :"/home/jacko/pifle/efb.vhd":216:4:216:12|Port ufm_sn of entity work.efb is unconnected
+

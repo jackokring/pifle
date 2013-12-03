@@ -1,0 +1,28 @@
+%%% protect protected_file
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|work.efb|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work"
+#CUR:"/usr/local/diamond/2.2/synpbase/linux/c_vhdl":1363019848
+#CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/location.map":1363026801
+#CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/std.vhd":1363019837
+#CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/snps_haps_pkg.vhd":1363019837
+#CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/std1164.vhd":1363019837
+#CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/numeric.vhd":1363019837
+#CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/umr_capim.vhd":1363019837
+#CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/arith.vhd":1363019837
+#CUR:"/usr/local/diamond/2.2/synpbase/lib/vhd/unsigned.vhd":1363019837
+#CUR:"/usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd":1347654319
+#CUR:"/home/jacko/pifle/efb.vhd":1386100069
+0 "/usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd" vhdl
+1 "/home/jacko/pifle/efb.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 0 
+
+# Dependency Lists (Users Of)
+0 1 
+1 -1
+
+# Design Unit to File Association
+arch work efb structure 1
+module work efb 1

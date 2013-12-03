@@ -1,0 +1,8 @@
+/usr/local/diamond/2.2/synpbase/bin/c_vhdl  -osyn  /home/jacko/pifle/Alabama/synwork/Alabama_Alabama_compiler.srs  -top  work.efb  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -divnmod -encrypt  -pro  -dmgen  /home/jacko/pifle/Alabama/dm  -lite -ll 2000   -ui -fid2 -ram -sharing on  -autosm -ignore_undefined_lib  -lib work /usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd -lib work /home/jacko/pifle/efb.vhd -loga  /home/jacko/pifle/Alabama/Alabama_Alabama.srr 
+rc:2 success:0
+/home/jacko/pifle/Alabama/synwork/Alabama_Alabama_compiler.srs|o|0|0
+/usr/local/diamond/2.2/cae_library/synthesis/vhdl/machxo2.vhd|i|1347654319|76237
+/home/jacko/pifle/efb.vhd|i|1386100069|15337
+/home/jacko/pifle/Alabama/Alabama_Alabama.srr|o|1386100221|164
+/usr/local/diamond/2.2/synpbase/bin/c_vhdl|i|1363019663|365
+/usr/local/diamond/2.2/synpbase/linux/c_vhdl|i|1363019848|5311588
