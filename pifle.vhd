@@ -11,19 +11,19 @@ entity pifle is
     LEDG: out slv;
     SDA: inout slv;
     SCL: inout slv;
-    PiCLK: in slv;
+    GPIO4: in slv;
 
 	-- right bank
-    R0: inout slv;
-    R1: inout slv;
-    R2: inout slv;
-    R3: inout slv;
-    R4: inout slv;
-    R5: inout slv;
-    R6: inout slv;
-    R7: inout slv;
-    R8: inout slv;
-    R9: inout slv;
+    ZIO4: inout slv;
+    ZIO17: inout slv;
+    ZIO18: inout slv;
+    ZIO21: inout slv;
+    ZIO22: inout slv;
+    ZIO23: inout slv;
+    ZIO24: inout slv;
+    ZIO25: inout slv;
+    ZIOA: inout slv;
+    ZIOB: inout slv;
 
 	-- bottom bank
     B0: out slv;
@@ -56,7 +56,7 @@ entity pifle is
     XIO15: inout slv;
     GPIO14: inout slv;
     XIO14: inout slv;
-    XCLK: out slv;
+    XIO4: inout slv;
 	
 	-- reset 
 	GSRn: in slv;
@@ -122,8 +122,24 @@ architecture rtl of pifle is
         PLLDATO: out  std_logic_vector(7 downto 0); 
         PLLACK: out  std_logic);
 	end component pllx;
+	
+	COMPONENT OSCH
+	-- synthesis translate_off
+	GENERIC (NOM_FREQ: string := "2.56");
+	-- synthesis translate_on
+	PORT (
+	STDBY :IN
+	std_logic;
+	OSC :OUT std_logic;
+	SEDSTDBY :OUT std_logic);
+	END COMPONENT;
+	attribute NOM_FREQ : string;
+	attribute NOM_FREQ of OSCM : label is "2.56";
+
 
   signal  GSRnX       : std_logic;
+  signal	MCLK		:slv;
+  signal	XCLK		:slv;
 
   -- attach a pullup to the GSRn signal
   attribute pullmode  : string;
@@ -134,8 +150,19 @@ begin
   IBgsr   : IB  port map ( I=>GSRn, O=>GSRnX );
   GSR_GSR : GSR port map ( GSR=>GSRnX );
   
+  OSCM: OSCH
+	-- synthesis translate_off	
+	GENERIC MAP ( NOM_FREQ => "2.56" )	
+	-- synthesis translate_on
+	PORT MAP (
+	STDBY=> '0',
+	OSC=> MCLK,
+	SEDSTDBY=> open
+	);
+
+  
   OSCAR: pllx port map (
-        CLKI => PiCLK, 
+        CLKI => MCLK, 
         -- PLLCLK => , 
         -- PLLRST => , 
         -- PLLSTB => , 

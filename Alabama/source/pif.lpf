@@ -34,23 +34,23 @@ SYSCONFIG JTAG_PORT=DISABLE  SDM_PORT=PROGRAMN  I2C_PORT=DISABLE  SLAVE_SPI_PORT
 #   LOCATE COMP "FJTAGn"        SITE "120" ;
     LOCATE COMP "SDA"           SITE "125" ;
     LOCATE COMP "SCL"           SITE "126" ;
-    LOCATE COMP "PiCLK"         SITE "128" ;
+    LOCATE COMP "GPIO4"         SITE "128" ;
 #   LOCATE COMP "FTMS"          SITE "130" ;
 #   LOCATE COMP "FTCK"          SITE "131" ;
 #   LOCATE COMP "FTDI"          SITE "136" ;
 #   LOCATE COMP "FTDO"          SITE "137" ;
 
 ## right bank
-    LOCATE COMP "R0"            SITE "74"  ;
-    LOCATE COMP "R1"            SITE "76"  ;
-    LOCATE COMP "R2"            SITE "82"  ;
-    LOCATE COMP "R3"            SITE "84"  ;
-    LOCATE COMP "R4"            SITE "92"  ;
-    LOCATE COMP "R5"            SITE "94"  ;
-    LOCATE COMP "R6"            SITE "98"  ;
-    LOCATE COMP "R7"            SITE "100" ;
-    LOCATE COMP "R8"            SITE "105" ;
-    LOCATE COMP "R9"            SITE "107" ;
+    LOCATE COMP "ZIO4"            SITE "74"  ;
+    LOCATE COMP "ZIO17"            SITE "76"  ;
+    LOCATE COMP "ZIO18"            SITE "82"  ;
+    LOCATE COMP "ZIO21"            SITE "84"  ;
+    LOCATE COMP "ZIO22"            SITE "92"  ;
+    LOCATE COMP "ZIO23"            SITE "94"  ;
+    LOCATE COMP "ZIO24"            SITE "98"  ;
+    LOCATE COMP "ZIO25"            SITE "100" ;
+    LOCATE COMP "ZIOA"            SITE "105" ;
+    LOCATE COMP "ZIOB"            SITE "107" ;
 
 ## bottom bank
     LOCATE COMP "B0"            SITE "38"  ;
@@ -87,7 +87,7 @@ SYSCONFIG JTAG_PORT=DISABLE  SDM_PORT=PROGRAMN  I2C_PORT=DISABLE  SLAVE_SPI_PORT
     LOCATE COMP "XIO15"         SITE "28"  ;
     LOCATE COMP "GPIO14"        SITE "32"  ;
     LOCATE COMP "XIO14"         SITE "33"  ;
-    LOCATE COMP "XCLK"          SITE "34"  ;
+    LOCATE COMP "XIO4"          SITE "34"  ;
 
 
 IOBUF PORT "GSRn" IO_TYPE=LVCMOS33 PULLMODE=UP   ;
